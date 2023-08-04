@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Horse Race Points System</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <h1>Horse Race Analysis Tool</h1>
+    <h2>Hi Grampy</h2>
+    <label for="csvFile" class="file-upload-btn">Choose File</label>
+    <input style="display: none;" type="file" id="csvFile" accept=".csv" onchange="updateUploadStatus()" />
+    <p id="file-upload-status"></p>
+    <button onclick="processData()">Run Card</button>
+    <div id="results"></div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
+    <script src="horse.js"></script>
+</body>
+</html>
